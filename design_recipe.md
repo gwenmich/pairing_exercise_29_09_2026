@@ -23,9 +23,9 @@ Order is kept: names appear in the same order they were given.
 ## 2 function signature
 ```python
 # Parameters:
-# - 
+# list of names
 # Return type:
-# - 
+# string contains names formatted as required
 # Side Effects:
 # - 
 def your_function():
@@ -35,8 +35,25 @@ def your_function():
 ## 3 exampples
 ```python
 # scenario 1
+"""
+Receives empty list
+Returns empty string
+"""
 
 # scenario 2
-
+"""
+Receives list with one item
+Returns string with one name
+"""
 # scenario 3
+"""
+Receives list with two items
+Returns string with names joined with ampersand
+"""
+
+# scenario 4
+"""
+Receives list with three items
+Returns string with names joined with commas and ampersand
+"""
 ```
