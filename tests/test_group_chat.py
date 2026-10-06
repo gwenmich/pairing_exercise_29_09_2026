@@ -7,3 +7,11 @@ def test_when_list_is_empty():
 def test_when_one_item():
   result = group_chat(["Bart"])
   assert result == "Bart"
+
+def test_when_two_items():
+  result = group_chat(["Bart", "Lucy"])
+  assert result == "Bart & Lucy"
+
+def test_when_three_items():
+  result = group_chat(["Bart", "Lucy", "Joe"])
+  assert result == "Bart, Lucy & Joe"
